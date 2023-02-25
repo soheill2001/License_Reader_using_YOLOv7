@@ -6,10 +6,10 @@ The system takes an input image of a car and first uses a pre-trained YOLOv7 obj
 
 YOLOv7 pre-trained is performing well as we can see below:
 
-![Car Image](images/results.png)
-![Car Image](images/example1.jpg)
+![Result](images/results.png)
+![Example1](images/example1.jpg)
 
-![License Plate Image](images/example2.jpg)
+![Example2](images/example2.jpg)
 
 ## Prerequisites
 The following Python packages are required to run this code:
