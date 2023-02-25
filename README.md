@@ -2,7 +2,7 @@
 
 This code implements a license plate recognition system using a combination of object detection and optical character recognition (OCR) techniques.
 
-The system takes an input image of a car and first uses a pre-trained YOLOv5 object detection model to detect the license plate. Then, it performs image processing and rotation on the detected plate to obtain an aligned version of the plate. Finally, the aligned plate is passed to a pre-trained OCR model to extract the characters from the plate.
+The system takes an input image of a car and first uses a pre-trained YOLOv7 object detection model to detect the license plate. Then, it performs image processing and rotation on the detected plate to obtain an aligned version of the plate. Finally, the aligned plate is passed to a pre-trained OCR model to extract the characters from the plate.
 
 ## Prerequisites
 The following Python packages are required to run this code:
@@ -24,7 +24,7 @@ The code has two modes of operation, training and prediction.
 To train the Optical Character Recognition (OCR) model, use the following command:
 
 ```
-python main.py --ocr_train_path <path to train dataset> --ocr_test_path <path to test dataset>
+python persian_plates.py --ocr_train_path <path to train dataset> --ocr_test_path <path to test dataset>
 ```
 Where <path to train dataset> and <path to test dataset> are the paths to the train and test datasets respectively.
 
@@ -32,9 +32,11 @@ Where <path to train dataset> and <path to test dataset> are the paths to the tr
 To predict the license plate in an input image, use the following command:
 
 ```
-python main.py --yolo_weight_path <path to YOLOv5 weight file> --ocr_weight_path <path to OCR weight file> --image_path <path to input image>
+python persian_plates.py --yolo_weight_path <path to YOLOv7 weight file> --ocr_weight_path <path to OCR weight file> --image_path <path to input image>
 ```
-Where <path to YOLOv5 weight file> is the path to the YOLOv5 weight file, <path to OCR weight file> is the path to the OCR weight file, and <path to input image> is the path to the input image.
+Where <path to YOLOv7 weight file> is the path to the YOLOv7 weight file, <path to OCR weight file> is the path to the OCR weight file, and <path to input image> is the path to the input image.
+
+Pre-trained weights are in `weight` folder.
 
 ## Challenges
 During the training of the YOLOv7 model, one of the challenges was finding a dataset for license plates that is similar to Persian plates. To overcome this challenge, foreign plates that are similar to Persian plates were used, and a dataset of Persian plates was found.
@@ -107,4 +109,4 @@ The code has the following workflow:
 
 
 ## Conclusion
-This code implements a license plate recognition system using a combination of object detection and OCR techniques. It takes an input image of a car, detects the license plate, aligns it properly and extracts the characters from the plate. The code can be further optimized by fine-tuning the YOLOv5 and OCR models on specific datasets for better accuracy.
+This code implements a license plate recognition system using a combination of object detection and OCR techniques. It takes an input image of a car, detects the license plate, aligns it properly and extracts the characters from the plate. The code can be further optimized by fine-tuning the YOLOv7 and OCR models on specific datasets for better accuracy.
