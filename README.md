@@ -92,7 +92,7 @@ test/
 ```
 
 Here is the Confusion Matrix for pre-trained OCR:
-![Car Image](images/ocr_confusion matrix.jpg)
+![Car Image](images/ocr_confusion_matrix.jpg)
 
 ### Rotate Images
 The Longest Line Detector and Image Rotator is a Python implementation of a computer vision algorithm to detect the longest line in an image and rotate the image accordingly. This algorithm can be useful in various applications, such as detecting the orientation of documents, license plates, or other objects with prominent lines.
