@@ -4,9 +4,12 @@ This code implements a license plate recognition system using a combination of o
 
 The system takes an input image of a car and first uses a pre-trained YOLOv7 object detection model to detect the license plate. Then, it performs image processing and rotation on the detected plate to obtain an aligned version of the plate. Finally, the aligned plate is passed to a pre-trained OCR model to extract the characters from the plate.
 
-![Car Image](images/car.png)
+YOLOv7 pre-trained is performing well as we can see below:
 
-![License Plate Image](images/cropped_image.jpg)
+![Car Image](images/results.png)
+![Car Image](images/example1.jpg)
+
+![License Plate Image](images/example2.jpg)
 
 ## Prerequisites
 The following Python packages are required to run this code:
@@ -87,6 +90,9 @@ test/
 │   └── ...
 └── ...
 ```
+
+Here is the Confusion Matrix for pre-trained OCR:
+![Car Image](images/ocr_confusion matrix.jpg)
 
 ### Rotate Images
 The Longest Line Detector and Image Rotator is a Python implementation of a computer vision algorithm to detect the longest line in an image and rotate the image accordingly. This algorithm can be useful in various applications, such as detecting the orientation of documents, license plates, or other objects with prominent lines.
