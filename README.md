@@ -4,6 +4,9 @@ This code implements a license plate recognition system using a combination of o
 
 The system takes an input image of a car and first uses a pre-trained YOLOv7 object detection model to detect the license plate. Then, it performs image processing and rotation on the detected plate to obtain an aligned version of the plate. Finally, the aligned plate is passed to a pre-trained OCR model to extract the characters from the plate.
 
+![Car Image](https://drive.google.com/uc?export=view&id=<car image id>)
+![License Plate Image](https://drive.google.com/uc?export=view&id=<license plate image id>)
+
 ## Prerequisites
 The following Python packages are required to run this code:
 ```
